@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 20px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+  background: #132436;
+  color: white;
+}
+
+.home-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #bebbbb;
+}
+
+.home-link:hover {
+  color: white;
+}
+.left{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.stats{
+    display: flex;
+    gap: 15px;
+}

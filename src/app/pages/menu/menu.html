@@ -1,0 +1,19 @@
+<app-header [part]="getSelectedPart()" [count]="getSelectedCount()" [sum]="getTotalValue()"/>
+<main class="container">
+  <div class="tabs">
+    @for (part of parts; track part.id) {
+      <div class="tab btn" [class.active]="currentPartId() === part.id" (click)="switchPart(part.id)">
+        {{ part.label }}
+      </div>
+    }
+  </div>
+  <div>
+    <h2>Выберите элементы:</h2>
+    @for (item of getCurrentItems(); track item.id) {
+      <label class="row">
+        <input type="checkbox" [checked]="isSelected(item.id)" (change)="toggle(item.id)"/>
+        <div>{{ item.label }} <i>(+{{ item.value }})</i></div>
+      </label>
+    }
+  </div>
+</main>

@@ -1,0 +1,35 @@
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+  gap: 100px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.tab {
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  background: #bebbbb;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #132436;
+  color: white;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.row strong {
+  margin-left: auto;
+}
