@@ -1,4 +1,7 @@
 # TestTask
+Project deploy: https://sofit-ta.github.io/test_task.github.io/
+
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
 
